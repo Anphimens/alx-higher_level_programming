@@ -3,7 +3,7 @@
 
 
 def uppercase(str):
-    """A function that prints a string in uppercase"""
+    """A function that Prints a string in uppercase"""
     for c in str:
         if ord(c) >= 97 and ord(c) <= 122:
             c = chr(ord(c) - 32)
