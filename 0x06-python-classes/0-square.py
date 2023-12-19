@@ -4,4 +4,7 @@
 
 
 class Square:
+    """ This is a class Square
+    which has no method yet
+    """
     pass
