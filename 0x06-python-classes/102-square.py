@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""a class that defines a square by:(based on 2-square.py)"""
+"""a class that defines a square by:(based on 4-square.py)"""
 
 
 class Square:
@@ -25,5 +25,52 @@ class Square:
             self.__size = value
 
     def area(self):
-        """Calculate and return the area of the square"""
+        """Public instance are which
+        Calculate and return the area of the square
+        """
         return self.__size ** 2
+
+    def __eq__(self, other):
+        """Square instance:
+        Equality comparator."""
+        return (
+            self.area() == other.area()
+        ) if isinstance(other, Square) else False
+
+    def __ne__(self, other):
+        """Square instance:
+        Inequaltiy comparator
+        """
+        return not self.__eq__(other)
+
+    def __gt__(self, other):
+        """Square instance:
+        Greater than comparator.
+        """
+        return (
+            self.area() > other.area()
+        ) if isinstance(other, Square) else False
+
+    def __ge__(self, other):
+        """Square instance:
+        Greater than or equal to comparator.
+        """
+        return (
+            self.area() >= other.area()
+         ) if isinstance(other, Square) else False
+
+    def __lt__(self, other):
+        """Square instance:
+        Less than comparator
+        """
+        return (
+            self.area() < other.area()
+         ) if isinstance(other, Square) else False
+
+    def __le__(self, other):
+        """Square instance:
+        Less than or equal to comparator.
+        """
+        return (
+            self.area() <= other.area()
+         ) if isinstance(other, Square) else False
