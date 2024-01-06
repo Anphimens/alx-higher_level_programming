@@ -9,17 +9,8 @@
 
 
 def add_integer(a, b=98):
-    """This function returns the addition of two integers
-    (a, b)
-
-    :: parameter (b) has been given a default value, so that
-        if b is absent the method will still work.
-
-    Float arguments are first typecasted into integer
-    and the return value is an int.
-
-    Raises:
-        TypeError: if arguments, that is (a, b) != integers or float
+    """Raises:
+    TypeError: if arguments, that is (a, b) != integers or float
     """
     if ((not isinstance(a, int) and not isinstance(a, float))):
         raise TypeError("a must be an integer")
