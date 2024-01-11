@@ -1,0 +1,2 @@
+# Python - More Classes and Objects
+In this project, I continue to practice more on object oriented programming in Python. I learnt about classes, static methods, class vs instance attributes, and how to use public, protected and private attributes. The special `__str__` and `__repr__` methods and hoe to use them.
